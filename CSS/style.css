@@ -1,12 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cta {
+background-color: #A6193E;
+color: white;
+font-size:0.8em;
+padding: 10px 50px;
+border-radius: 10px;
+text-transform: uppercase;
+font-weight:800;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 0px 3px 6px black;
+    text-transform: uppercase;
+}
+
+/* HOME PAGE */
+
 .logo {
-    max-width: 100%;
-    width: 150px;
+    max-width: 150px;
+    margin: 10px 0px
 }
 
 header {
-    display:flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
+
 header {
     background-color: #072D51;
     color: white;
@@ -18,31 +43,84 @@ header a {
     padding-left: 10px;
 }
 
-nav {
-    text-align: center;
-    width: 900px
-}
-
 nav ul {
-    padding: 10px;
+    padding: 0px;
+    margin: 0px
 }
 
 nav li {
     display: inline-block;
-    padding: 0px 100px
+    margin: 0px 70px 0px 70px;
+    font-size: 1.3em;
+    padding-top: 10px;
 }
 
-.searchbar {
-    margin:10px
+i {
+    padding: 5px;
 }
+
+.New-collection {
+    background-image:  url('../images/3.png');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.Home-autumn {
+    position: relative;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.home-scroll {
+    background-image:  url('../images/cano.jpg'), url('../images/7.png');
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 90vh;
+    background-position: left top, right bottom;
+}
+
+.canoeing {
+    position: relative;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 660px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
 
 /* links */
 
+input {
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    width: 92%;
+    padding: 5px;
+    background: transparent;
+    color:white
+}
 
 a {
     text-decoration: none;
 }
 
 .active {
-    text-decoration: underline;
+    font-weight: bolder;
 }
