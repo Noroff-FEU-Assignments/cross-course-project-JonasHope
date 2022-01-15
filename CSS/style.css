@@ -9,7 +9,7 @@ font-size:0.8em;
 padding: 10px 50px;
 border-radius: 10px;
 text-transform: uppercase;
-font-weight:800;
+font-weight:750;
 }
 
 h1 {
@@ -32,15 +32,26 @@ header {
     justify-content: space-around;
 }
 
-header {
+header, footer {
     background-color: #072D51;
     color: white;
 }
 
-header a {
+header a, footer a {
     color: white;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+footer a {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 nav ul {
@@ -60,11 +71,11 @@ i {
 }
 
 .New-collection {
-    background-image:  url('../images/3.png');
+    background-image:  url('../images/pexels.jpg');
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 100vh;
     background-position-x: center;
     background-position-y: center;
 }
@@ -80,22 +91,23 @@ i {
     justify-content: center;
     margin: auto;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .home-scroll {
-    background-image:  url('../images/cano.jpg'), url('../images/7.png');
+    background-image:  url('../images/cano.png'), url('../images/7.png');
     display: flex;
     background-repeat: no-repeat;
-    background-size: 50%;
-    height: 90vh;
-    background-position: left top, right bottom;
+    background-size:50% 100%;
+    height:70vh;
+    background-position: left center, right bottom;
 }
 
 .canoeing {
     position: relative;
     color: #fff;
     line-height: 1.5;
-    max-width: 660px;
+    max-width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -103,6 +115,28 @@ i {
     margin: auto;
     text-align: center;
 }
+
+
+.bluechick {
+    position: relative;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+
+.customer-service, .about {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
 
 
 /* links */
