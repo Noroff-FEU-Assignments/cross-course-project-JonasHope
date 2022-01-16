@@ -8,27 +8,46 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+   <body>
     <header>
+      <div class="nav-align">
         <a href="index.html"><img src="images/asset 1.png"  class="logo"></a>
-        <nav>
-          <form class="s">
-            <i class="fas fa-search"></i>
-            <input type="search" name="searchbar" id="search">
+        <div class="search-nav">
+         <div class="new-nav">
+          <form class="search-icon2">
+            <input type="search" name="searchbar" id="search" placeholder="Search for products.." class="search-icon" />
           </form>
+          <div class="nav-icons_mobile">
+            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="hamburger-menu" />
+            <nav>
+              <ul>
+                <li><a href="Men.html">Men</a></li>
+                <li><a href="Women.html">Women</a></li>
+                <li><a href="Outlet.html">Outlet</a></li>
+              </ul>
+            </nav> 
+            <i class="fas fa-shopping-bag"></i>
+            <span>Cart</span>
+            <i class="far fa-user-circle"></i>
+            <span>Sign in</span>
+       </div>
+      </div>
+       <nav>
           <ul>
             <li><a href="Men.html">Men</a></li>
             <li><a href="Women.html">Women</a></li>
             <li><a href="Outlet.html">Outlet</a></li>
           </ul>
         </nav>
-        <div>
-           <i class="fas fa-shopping-bag"></i>
-           <span>Cart</span>
-           <i class="far fa-user-circle"></i>
-           <span>Sign in</span>
         </div>
+        <div class="nav-icons_desktop">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Cart</span>
+            <i class="far fa-user-circle"></i>
+            <span>Sign in</span>
+       </div>
+         </div>
     </header>
-
   </body>
 </html>
