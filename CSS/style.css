@@ -38,13 +38,6 @@ h3 {
     margin: 10px 0px
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
 header, footer {
     background-color: #072D51;
     color: white;
@@ -52,8 +45,6 @@ header, footer {
 
 header a, footer a {
     color: white;
-    padding-right: 10px;
-    padding-left: 10px;
 }
 
 footer a {
@@ -69,15 +60,11 @@ footer {
     margin-top: auto;
 }
 
-.new-nav {
+.header_content {
     display: flex;
     flex-direction: column;
-}
-
-.nav-align {
-    display: flex;
     align-items: center;
-    flex-direction: column
+    justify-content: center
 }
 
 nav {
@@ -108,9 +95,7 @@ nav li {
 .nav-icons_mobile {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 20px;
-    justify-content: space-between;
+    padding: 20px 45px;
     font-size:1em ;
     position:relative;
 }
@@ -179,7 +164,7 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40vh;
-    background-position: left bottom;
+    background-position: left center;
     flex-direction: column;
 }
 
@@ -266,10 +251,6 @@ a {
         min-height: 70vh;
     }
 
-    .nav-align {
-        flex-direction: row;
-    }
-
     .search-nav {
         display:flex;
         flex-direction: column
@@ -284,7 +265,7 @@ a {
         align-items: center;
         flex-direction: row;
         justify-content: center;
-        left: -390px;
+        left: -336px;
         padding: 0px;
     }
 
@@ -292,16 +273,8 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 50px;
+        margin: 50px 25px;
         font-size: 1em;
-    }
-
-    
-    header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
     }
 
     nav li {
@@ -339,7 +312,7 @@ a {
         font-size: larger;
     }
 
-    .new-nav {
+    .header_content {
         flex-direction: row;
     }
 
@@ -368,7 +341,11 @@ a {
     }
     
     nav {
-        left: -440px
+        left: -380px
+    }
+
+    .logo {
+        margin: 10px 40px
     }
 
     h1, h2 {
@@ -391,7 +368,7 @@ a {
     }
 
     nav {
-        left: -640px;
+        left: -585px;
     }
 
     h1 {
