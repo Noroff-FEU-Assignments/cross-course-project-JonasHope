@@ -1,5 +1,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .cta {
@@ -13,9 +16,19 @@ font-weight:750;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-shadow: 0px 3px 6px black;
     text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.5em;
+    text-shadow: 0px 3px 6px black;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
 }
 
 /* HOME PAGE */
@@ -44,15 +57,16 @@ header a, footer a {
 }
 
 footer a {
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 footer {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
-    padding:20px
+    padding: 20px;
+    margin-top: auto;
 }
 
 .new-nav {
@@ -67,18 +81,20 @@ footer {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     display:none;
+    position: absolute;
+    top: 82px;
+    background:#072D51;
+    left: 0px;
+    padding: 20px;
+    z-index: 1000;
 }
 
 nav ul {
     display: flex;
+    flex-direction: column;
     padding: 0px;
     margin: 0px;
-    align-items: center;
-    flex-direction: row;
 }
 
 nav li {
@@ -86,6 +102,7 @@ nav li {
     margin: 0px 30px 0px 30px;
     font-size: 1.3em;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-icons_mobile {
@@ -95,17 +112,11 @@ nav li {
     padding: 20px;
     justify-content: space-between;
     font-size:1em ;
+    position:relative;
 }
 
 .nav-icons_mobile i {
     font-size: 2em;
-}
-
-.nav-icons_desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    display:none;
 }
 
 .nav-icons i {
@@ -133,16 +144,11 @@ i {
     padding: 5px;
 }
 
-.search-icon2 {
+.search-bar {
     position: relative;
     display:flex;
     align-items: center;
     justify-content: center;
-}
-
-.search-icon2 i {
-    padding-right: 10px;
-    padding-left: 30px;
 }
 
 .New-collection {
@@ -150,7 +156,7 @@ i {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 40vh;
     background-position-y: center;
 }
 
@@ -158,40 +164,35 @@ i {
     position: relative;
     color: #fff;
     line-height: 1.5;
-    max-width: 660px;
+    max-width: 260px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     text-align: center;
-    padding-bottom: 100px;
 }
 
-.home-scroll {
-    background-image:  url('../images/cano.png'), url('../images/7.png');
+.home-scroll-1 {
+    background-image:  url('../images/cano.png');
     display: flex;
     background-repeat: no-repeat;
-    background-size:50% 100%;
-    min-height: 25vh;
-    background-position: left center, right center;
-}
-
-.canoeing {
-    position: relative;
-    color: #fff;
-    line-height: 1.5;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
+    background-size: cover;
+    min-height: 40vh;
+    background-position: left bottom;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    text-align: center;
 }
 
+.home-scroll-2 {
+    background-image: url('../images/7.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    background-position: center;
+    display:flex
+}
 
-.bluechick {
+.canoeing, .bluechick {
     position: relative;
     color: #fff;
     line-height: 1.5;
@@ -211,15 +212,13 @@ i {
     padding: 20px;
 }
 
-
-
 /* links */
 
 .search-icon {
     border: 2px solid #ffff;
     border-radius: 5px;
     margin: 10px 0px 10px 0px;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     background: transparent;
     color:white
@@ -235,29 +234,40 @@ a {
 
 @media (min-width: 600px) {
     .New-collection {
-        background-image:  url('../images/pexels.jpg');
-        display: flex;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-        background-position-y: center;
+        min-height: 60vh;
+    }
+
+    .Home-autumn {
+        max-width: 460px;
+    }
+
+    .search-icon {
+        width: 400px
+    }
+
+    h1, h2 {
+        font-size: 2em;
     }
 }
 
 @media (min-width: 800px) {
-    .home-scroll {
-        background-image:  url('../images/cano.png'), url('../images/7.png');
+
+    footer {
         display: flex;
-        background-repeat: no-repeat;
-        background-size:50% 100%;
-        height:40vh;
-        background-position: left center, right bottom;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .customer-service, .about {
+        align-items: flex-start;
+    }
+
+    .New-collection {
+        min-height: 70vh;
     }
 
     .nav-align {
-        display: flex;
         flex-direction: row;
-        align-items: center;
     }
 
     .search-nav {
@@ -269,26 +279,21 @@ a {
         display:none
     }
 
-    .nav-icons_desktop {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: 50px;
-        font-size: 1.3em;
-    }
-    .nav-align {
-        display:flex;
-    }
-
     nav {
         display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: center;
+        left: -390px;
+        padding: 0px;
     }
 
     .nav-icons_mobile {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px;
+        font-size: 1em;
     }
 
     
@@ -310,7 +315,7 @@ a {
         border: 2px solid #ffff;
         border-radius: 5px;
         margin: 10px 0px 10px 0px;
-        width: 500px;
+        width: 300px;
         padding: 10px;
         background: transparent;
         color:white
@@ -328,43 +333,72 @@ a {
         padding: 0px 10px
     }
 
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        font-size: larger;
+    }
+
+    .new-nav {
+        flex-direction: row;
+    }
+
 }
 
 @media (min-width: 1105px) {
-    .home-scroll {
-        background-image:  url('../images/cano.png'), url('../images/7.png');
-        display: flex;
-        background-repeat: no-repeat;
-        background-size:50% 100%;
-        height:50vh;
-        background-position: left center, right bottom;
+
+    .home-scroll-1, .home-scroll-2 {
+        min-height: 70vh;
+    }
+
+    .home-scroll-2 {
+        background-position: left bottom;
+    }
+
+    .New-collection {
+        min-height: 90vh;
     }
     
     span {
         display: inline-block;
     }
+
+    .search-icon {
+        width: 500px
+    }
+    
+    nav {
+        left: -440px
+    }
+
+    h1, h2 {
+        font-size: 2.5em;
+    }
 }
 
 @media (min-width: 1550px) {
-    .home-scroll {
-        background-image:  url('../images/cano.png'), url('../images/7.png');
-        display: flex;
-        background-repeat: no-repeat;
-        background-size:50% 100%;
-        height:70vh;
-        background-position: left center, right center;
+
+    .home-scroll-1 {
+        background-position: left;
     }
 
-    .nav-icons_desktop {
-        padding: 0px 100px
+    .New-collection {
+        min-height: 100vh;
     }
 
-    .logo {
-        padding:20px 150px
+    .search-bar {
+        margin: 0px 200px;
+    }
+
+    nav {
+        left: -640px;
     }
 
     h1 {
         font-size:3em ;
     }
-}
 
+    h2 {
+        font-size:3em ;
+    }
+}
