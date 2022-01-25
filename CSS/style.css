@@ -17,7 +17,6 @@ font-weight:750;
 
 h1 {
     font-size: 1.5em;
-    text-shadow: 0px 3px 6px black;
     text-transform: uppercase;
 }
 
@@ -27,14 +26,14 @@ h2{
     text-transform: uppercase;
 }
 
-h3 {
+footer h3 {
     font-size: 1.5em;
 }
 
 /* HOME PAGE */
 
 .logo {
-    max-width: 150px;
+    max-width: 200px;
     margin: 10px 0px
 }
 
@@ -92,7 +91,7 @@ nav li {
     padding-bottom: 10px;
 }
 
-.nav-icons_mobile {
+.nav-icons {
     display: flex;
     flex-direction: row;
     padding: 20px 45px;
@@ -100,17 +99,8 @@ nav li {
     position:relative;
 }
 
-.nav-icons_mobile i {
-    font-size: 2em;
-}
-
 .nav-icons i {
-    padding: 10px;
-}
-
-.icons_nav {
-    display: flex;
-    padding: 5px;
+    font-size: 2em;
 }
 
 #hamburger-menu {
@@ -125,8 +115,14 @@ span {
     display:none
 }
 
-i {
-    padding: 5px;
+.search-icon {
+    border: 2px solid #ffff;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+    max-width: 500px;
+    padding: 10px;
+    background: transparent;
+    color:white
 }
 
 .search-bar {
@@ -146,16 +142,18 @@ i {
 }
 
 .Home-autumn {
-    position: relative;
     color: #fff;
     line-height: 1.5;
     max-width: 260px;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
     margin: auto;
     text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Home-autumn h1 {
+    text-shadow: 0px 3px 6px black;
 }
 
 .home-scroll-1 {
@@ -199,14 +197,12 @@ i {
 
 /* links */
 
-.search-icon {
-    border: 2px solid #ffff;
-    border-radius: 5px;
-    margin: 10px 0px 10px 0px;
-    max-width: 400px;
-    padding: 10px;
-    background: transparent;
-    color:white
+i {
+    padding: 5px;
+}
+
+.fas.fa-shopping-bag {
+    margin: 0px 50px
 }
 
 a {
@@ -217,17 +213,73 @@ a {
     font-weight: bolder;
 }
 
+
+/* Jackets Men */
+
+.multi-blue{
+    max-width: 200px;
+}
+
+.header-men h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-men p {
+    max-width: 50%;
+    margin: 30px auto;
+}
+
+.main-jackets {
+    margin:auto;
+}
+
+.jackets {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    margin: 50px 0px 100px 0px;
+    max-width: 1000px;
+    column-gap: 100px;
+}
+
+.jackets img {
+    border-radius: 5%;
+}
+
+.rainydays {
+    margin: 0px;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+.main-jackets h3 {
+    margin-top: 0px;
+    font-weight: lighter;
+}
+
+.price {
+    font-size: 1.6em;
+    font-weight: 900;
+    position: relative;
+    left: 120px;
+    margin: 30px 0px;
+}
+
+
+/* Media */
+
 @media (min-width: 600px) {
     .New-collection {
         min-height: 60vh;
     }
 
     .Home-autumn {
-        max-width: 460px;
+        max-width: 720px;
     }
 
     .search-icon {
-        width: 400px
+        width: 300px
     }
 
     h1, h2 {
@@ -235,7 +287,7 @@ a {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
 
     footer {
         display: flex;
@@ -265,33 +317,21 @@ a {
         align-items: center;
         flex-direction: row;
         justify-content: center;
-        left: -336px;
+        left: -475px;
         padding: 0px;
     }
 
-    .nav-icons_mobile {
-        display: flex;
-        flex-direction: row;
+    .nav-icons {
         align-items: center;
         margin: 50px 25px;
-        font-size: 1em;
     }
 
     nav li {
-        display: inline-block;
-        margin: 0px 20px;
-        font-size: 1.3em;
-        padding-top: 10px;
+        margin: 0px 50px;
     }
 
     .search-icon {
-        border: 2px solid #ffff;
-        border-radius: 5px;
-        margin: 10px 0px 10px 0px;
-        width: 300px;
-        padding: 10px;
-        background: transparent;
-        color:white
+        width: 400px;
     }
 
     header label {
@@ -307,7 +347,6 @@ a {
     }
 
     nav ul {
-        display: flex;
         flex-direction: row;
         font-size: larger;
     }
@@ -316,9 +355,13 @@ a {
         flex-direction: row;
     }
 
+    .fas.fa-shopping-bag {
+        margin: 0px 0px
+    }
+
 }
 
-@media (min-width: 1105px) {
+@media (min-width: 1185px) {
 
     .home-scroll-1, .home-scroll-2 {
         min-height: 70vh;
@@ -337,15 +380,19 @@ a {
     }
 
     .search-icon {
-        width: 500px
+        width: 500px;
     }
     
     nav {
-        left: -380px
+        left: -550px;
+    }
+
+    nav li {
+        margin: 0px 60px;
     }
 
     .logo {
-        margin: 10px 40px
+        margin: 10px 10px;
     }
 
     h1, h2 {
@@ -353,7 +400,7 @@ a {
     }
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1585px) {
 
     .home-scroll-1 {
         background-position: left;
@@ -368,7 +415,7 @@ a {
     }
 
     nav {
-        left: -585px;
+        left: -750px;
     }
 
     h1 {
