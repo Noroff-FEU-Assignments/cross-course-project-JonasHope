@@ -1,0 +1,23 @@
+.our-story {
+    display: flex;
+    flex-direction: column;
+}
+
+.story, .semi-h {
+    font-size: larger;
+    max-width: 70%;
+    margin: 20px auto;
+}
+
+.story {
+    margin-bottom: 50px
+}
+
+.semi-h {
+    font-weight: 700;
+}
+
+.story-h {
+    display:flex;
+    justify-content: center;
+}
