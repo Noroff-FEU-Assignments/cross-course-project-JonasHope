@@ -1,6 +1,6 @@
 .about-main {
-    max-width: 1400px;
-    margin:auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .our-story, .story-row {
@@ -10,7 +10,8 @@
 }
 
 .our-story img {
-    max-width: 80%;
+    max-width: 50%;
+    margin: 30px
 }
 
 .story, .semi-h {
@@ -38,7 +39,7 @@
 
 /* Media */
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
     .story-h {
         font-size: 5.5em;
@@ -48,9 +49,8 @@
         flex-direction: row;
         align-items: flex-start;
     }
-
+   
     .our-story img {
-        max-width: 50%;
-        margin: 30px;
+        max-width: 30%;
     }
 }

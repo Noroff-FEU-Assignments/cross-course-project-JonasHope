@@ -10,16 +10,27 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 0px;
 }
 
 .cta {
 background-color: #A6193E;
 color: white;
-font-size:0.8em;
+font-size:1em;
 padding: 10px 50px;
 border-radius: 10px;
 font-weight:750;
 }
+
+.cta-blue {
+    background-color: #003CFF;
+    color: white;
+    font-size:1em;
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-weight:750;
+    }
 
 h1, h2 {
     font-size: 2.5em;
@@ -150,7 +161,7 @@ span {
     justify-content: center;
 }
 
-.fas.fa-shopping-bag {
+.ikon-spacing {
     margin: 0px 50px
 }
 
