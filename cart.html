@@ -6,13 +6,13 @@
     <meta name="description" content="Get quality jackets for rainy days" />
     <title>Rainy Days | Home</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/product.css" rel="stylesheet" />
+    <link href="css/cart.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
    <body>
     <header>
       <div class="header_content">        
-           <a href="index.html"><img src="images/asset 1.png"  class="logo"></a>
+        <a href="index.html"><img src="images/Asset.png"  class="logo" alt="logo"></a>
            <form class="search-bar">
             <input type="search" name="searchbar" id="search" placeholder="Search for products.." class="search-icon" />
            </form>
@@ -33,30 +33,31 @@
            </div>
       </div>
     </header>
-    <main class="product-main">
-       <div class="img-header">
-        <h1>Iconic Jacket</h1>        
-        <input type="radio" name="dot" id="dot-red" checked />
-        <img src="Images/rod5.jpg"  class="product-img1"/>
-        <input type="radio" name="dot" id="dot-blue" />
-        <img src="Images/blå5.jpg" class="product-img2"/>
-        <input type="radio" name="dot" id="dot-green" />
-        <img src="Images/grønn5.jpg" class="product-img3"/>
-        <ul>
-           <li><label for="dot-blue"><i class="dot-blue"></i></label></li> 
-           <li><label for="dot-green"><i class="dot-green"></i></label></li>
-           <li><label for="dot-red"><i class="dot-red"></i></label></li>
-        </ul>
-       </div>
-        <div class="product-info">
-            <h2>Product info</h2>
-            <p>The popular iconic jacket is waterproof and wind resistant.
-            It is perfect for hiking, canoeing and simple walks in all weather
-            </p>
-            <h3>$299</h3>
-            <a href="#" class="cta-blue"><i class="fas fa-shopping-bag another-class"></i> Add to cart</a>
+    <main class="cart-main">
+      <h1>Cart</h1>
+      <hr>
+      <section class="cart-product">
+        <div class="cart-image">
+         <div class="cancel-icon">
+          <a href="index.html"><i class="far fa-times-circle back"></i></a>
+         </div>
+          <img src="Images/blå5.jpg">
         </div>
-
+        <div class="product-specifics">
+          <p>Rainydays Iconic Jacket</p>
+          <p>$299</p>
+        </div>
+      </section>
+      <hr>
+      <section class="cart-total">
+        <div class="total">
+          <h2>Total</h2>
+          <p>$299</p>
+        </div>
+        <div class="cart-cta">
+          <a href="#" class="cta-blue">Buy</a>
+        </div>
+      </section>
     </main>
   <footer>
       <div class="about">
