@@ -204,17 +204,17 @@ nav li {
 }
 
 .home-scroll-1 {
-    background-image:  url('../images/cano.png');
+    background-image:  url('../images/pexels-jaime.jpg');
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40vh;
-    background-position: left center;
+    background-position: left bottom;
     flex-direction: column;
 }
 
 .home-scroll-2 {
-    background-image: url('../images/7.png');
+    background-image: url('../images/7.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40vh;
@@ -372,10 +372,6 @@ nav li {
 }
 
 @media (min-width: 1585px) {
-
-    .home-scroll-1 {
-        background-position: left;
-    }
 
     .new-collection {
         min-height: 100vh;

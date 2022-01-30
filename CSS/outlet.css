@@ -24,7 +24,7 @@
 }
 
 .outlet.women, .outlet.men {
-    background-image: url('../images/grønn4.jpg');
+    background-image: url('../images/gronn4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
@@ -38,7 +38,7 @@
 }
 
 .outlet.men {
-    background-image: url('../images/blå5.jpg');
+    background-image: url('../images/bla5.jpg');
     background-position: center bottom;
     margin-bottom: 50px;
 
