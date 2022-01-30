@@ -179,7 +179,7 @@ nav li {
 
 /* HOME PAGE */
 
-.New-collection {
+.new-collection {
     background-image:  url('../images/pexels.jpg');
     display: flex;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ nav li {
     background-position-y: center;
 }
 
-.Home-autumn {
+.home-autumn {
     color: #fff;
     line-height: 1.5;
     max-width: 260px;
@@ -199,7 +199,7 @@ nav li {
     flex-direction: column;
 }
 
-.Home-autumn h1 {
+.home-autumn h1 {
     text-shadow: 0px 3px 6px black;
 }
 
@@ -242,11 +242,11 @@ nav li {
 /* Media */
 
 @media (min-width: 600px) {
-    .New-collection {
+    .new-collection {
         min-height: 60vh;
     }
 
-    .Home-autumn {
+    .home-autumn {
         max-width: 720px;
     }
 
@@ -271,7 +271,7 @@ nav li {
         align-items: flex-start;
     }
 
-    .New-collection {
+    .new-collection {
         min-height: 70vh;
     }
 
@@ -340,7 +340,7 @@ nav li {
         background-position: left bottom;
     }
 
-    .New-collection {
+    .new-collection {
         min-height: 90vh;
     }
     
@@ -376,7 +376,7 @@ nav li {
         background-position: left;
     }
 
-    .New-collection {
+    .new-collection {
         min-height: 100vh;
     }
 
