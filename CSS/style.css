@@ -18,7 +18,7 @@ body {
 background-color: #A6193E;
 color: white;
 font-size:1em;
-padding: 10px 50px;
+padding: 15px 40px;
 border-radius: 10px;
 font-weight:750;
 margin-bottom: 10px;
@@ -36,7 +36,7 @@ margin-bottom: 10px;
     background-color: #003CFF;
     color: white;
     font-size:1em;
-    padding: 10px 50px;
+    padding: 15px 25px;
     border-radius: 10px;
     font-weight:750;
     }
@@ -108,7 +108,7 @@ footer h3 {
 nav {
     display:none;
     position: absolute;
-    top: 82px;
+    top: 77px;
     background:#072D51;
     left: 0px;
     padding: 20px;
@@ -133,7 +133,7 @@ nav li {
 .nav-icons {
     display: flex;
     flex-direction: row;
-    padding: 20px 45px;
+    padding: 20px 30px;
     font-size:0.9em ;
     position:relative;
 }
@@ -300,6 +300,7 @@ nav li {
     .nav-icons {
         align-items: center;
         margin: 50px 25px;
+        padding: 20px 45px;
     }
 
     nav li {
