@@ -1,0 +1,64 @@
+.signin-body {
+    background-color: #072D51;
+    margin: 20px
+}
+
+.signin-form {
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin:20px;
+    color: #ffffff;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 10px 20px;
+    margin:10px 0px;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.signin-section {
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.signin-section a {
+    color:#ffffff;
+    padding:10px;
+}
+
+.signin-button a {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+/* Payment */
+
+.confirm {
+    box-shadow: 0px 0px 5px #ffffff;
+    margin: 50px
+}
+
+/* complete pages */
+
+.header-confirm {
+    text-align: center;
+    padding:50px;
+    color:#ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.header-confirm p {
+    padding: 20px 0px 50px 0px
+}

@@ -6,10 +6,10 @@
     <meta name="description" content="Get quality jackets for rainy days" />
     <title>Rainy Days | Home</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/product.css" rel="stylesheet" />
+    <link href="css/forms.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
-   <body>
+   <body class="signin-body">
     <header>
       <div class="header_content">        
            <a href="index.html"><img src="images/Asset.png"  class="logo" alt="logo"></a>
@@ -31,30 +31,23 @@
            </div>
       </div>
     </header>
-    <main class="product-main">
-       <div class="img-header">
-        <h1>Iconic Jacket</h1>        
-        <input type="radio" name="dot" id="dot-red" checked />
-        <img src="Images/rod5.jpg" alt="img" class="product-img1"/>
-        <input type="radio" name="dot" id="dot-blue" />
-        <img src="Images/blå5.jpg" alt="img" class="product-img2"/>
-        <input type="radio" name="dot" id="dot-green" />
-        <img src="Images/grønn5.jpg" alt="img" class="product-img3"/>
-        <ul>
-           <li><label for="dot-blue"><i class="dot-blue"></i></label></li> 
-           <li><label for="dot-green"><i class="dot-green"></i></label></li>
-           <li><label for="dot-red"><i class="dot-red"></i></label></li>
-        </ul>
-       </div>
-        <div class="product-info">
-            <h2>Product info</h2>
-            <p>The popular iconic jacket is waterproof and wind resistant.
-            It is perfect for hiking, canoeing and simple walks in all weather
-            </p>
-            <h3>$299</h3>
-            <a href="cart.html" class="cta-blue"><i class="fas fa-shopping-bag another-class"></i> Add to cart</a>
-        </div>
-
+    <main class="signin-main">
+        <form method="post" class="signin-form">
+            <div class="header">
+                <h1>Sign in</h1>
+            </div>
+            <div class="signin-section">
+                <label for="email">Username</label>
+                <input type="text" placeholder="Email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" id="password" required>
+                <a href="psw-rec.html">Forgot password?</a>
+                <a href="account-creation.html">Create new account</a>
+            <div class="signin-button">
+                <a href="signin-complete.html" class="cta">Sign in</a>
+            </div>
+            </div>
+        </form>
     </main>
   <footer>
       <div class="about">

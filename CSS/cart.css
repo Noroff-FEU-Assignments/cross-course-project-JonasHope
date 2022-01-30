@@ -17,6 +17,10 @@
     align-items: flex-start;
 }
 
+.product-specifics h3 {
+    font-size: 1em;
+}
+
 .cancel-icon {
     display:flex;
     justify-content: flex-start;

@@ -21,6 +21,15 @@ font-size:1em;
 padding: 10px 50px;
 border-radius: 10px;
 font-weight:750;
+margin-bottom: 10px;
+}
+
+.cta:hover {
+    background-color: #072D51;
+}
+
+.cta-blue:hover {
+    background-color:green;
 }
 
 .cta-blue {
@@ -38,23 +47,24 @@ h1, h2 {
     letter-spacing: 2px;
 }
 
-i {
-    padding: 5px;
-}
-
-a {
+body a {
     text-decoration: none;
 }
 
 .active {
     font-weight: bolder;
+    text-decoration: underline;
+}
+
+.nav-icons a:hover, .logo:hover, footer a:hover {
+    opacity: 0.8;
 }
 
 /* HEADER */
 
 .logo {
     max-width: 200px;
-    margin: 10px 0px
+    margin: 10px 0px;
 }
 
 header, footer {
@@ -124,7 +134,7 @@ nav li {
     display: flex;
     flex-direction: row;
     padding: 20px 45px;
-    font-size:1em ;
+    font-size:0.9em ;
     position:relative;
 }
 
@@ -140,7 +150,7 @@ nav li {
     display: block;
 }
 
-span {
+.nav-icons span {
     display:none
 }
 
@@ -162,7 +172,8 @@ span {
 }
 
 .ikon-spacing {
-    margin: 0px 50px
+    margin: 0px 25px;
+    padding: 5px;
 }
 
 
@@ -272,6 +283,10 @@ span {
     .hamburger_menu {
         display:none
     }
+        
+    header label {
+        display:none;
+    }
 
     nav {
         display: flex;
@@ -291,33 +306,26 @@ span {
         margin: 0px 50px;
     }
 
-    .search-icon {
-        width: 400px;
+    nav ul {
+        flex-direction: row;
+        font-size: larger;
+
     }
 
-    header label {
-        display:none;
+    .search-icon {
+        width: 400px;
     }
 
     .logo {
         padding:20px 50px
     }
 
-    span {
-        padding: 0px 10px
-    }
-
-    nav ul {
-        flex-direction: row;
-        font-size: larger;
-    }
-
     .header_content {
         flex-direction: row;
     }
 
-    .fas.fa-shopping-bag {
-        margin: 0px 0px
+    .ikon-spacing {
+        margin: 0px
     }
 
 }
@@ -336,8 +344,9 @@ span {
         min-height: 90vh;
     }
     
-    span {
+    .nav-icons span {
         display: inline-block;
+        padding: 0px 10px;
     }
 
     .search-icon {
