@@ -14,18 +14,30 @@ body {
     margin: 0px;
 }
 
+main {
+    padding: 25px;
+}
+
+.index-main {
+    padding:0px;
+}
+
 .cta {
-background-color: #A6193E;
+background-color: #000000;
 color: white;
 font-size:1em;
 padding: 15px 40px;
 border-radius: 10px;
 font-weight:750;
 margin-bottom: 10px;
+text-shadow: none;
+border: 1px solid #fff
 }
 
 .cta:hover {
-    background-color: #072D51;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0)
 }
 
 .cta-blue:hover {
@@ -45,6 +57,15 @@ h1, h2 {
     font-size: 2.5em;
     font-family: "bebasneue", Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+.center {
+    display:flex;
+    align-items: center;
 }
 
 body a {
@@ -85,6 +106,8 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
 }
 
 footer h3 {

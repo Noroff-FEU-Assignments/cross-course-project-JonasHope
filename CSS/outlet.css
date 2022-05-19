@@ -23,7 +23,7 @@
     font-size: larger;
 }
 
-.outlet.women, .outlet.men {
+.outlet-women, .outlet-men {
     background-image: url('../images/gronn4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,13 +31,18 @@
     min-height: 50vh;
     background-position: center;
     margin: 10px 0px 0px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0px 3px 6px black;
 }
 
 .outlet h2 {
     text-shadow: 0px 3px 6px black;
 }
 
-.outlet.men {
+.outlet-men {
     background-image: url('../images/bla5.jpg');
     background-position: center bottom;
     margin-bottom: 50px;
@@ -65,7 +70,7 @@
         flex-direction: row;
     }
 
-    .outlet.women, .outlet.men {
+    .outlet-women, .outlet-men {
         min-width: 50%;
         margin: 10px 0px 10px 0px;
     }
