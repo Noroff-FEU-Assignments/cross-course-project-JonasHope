@@ -13,9 +13,10 @@
 }
 
 .outlet-header h1 {
-    font-size: 5.5em;
+    font-size: 3.5em;
     margin: 10px 0px;
     color: #591628;
+    text-align: center;
 }
 
 .outlet-header p {
@@ -27,26 +28,19 @@
     background-image: url('../images/gronn4.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    min-width: 100%;
+    min-width: 95%;
     min-height: 50vh;
     background-position: center;
-    margin: 10px 0px 0px 0px;
+    margin: 10px auto;
     display:flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-shadow: 0px 3px 6px black;
-}
-
-.outlet h2 {
-    text-shadow: 0px 3px 6px black;
 }
 
 .outlet-men {
     background-image: url('../images/bla5.jpg');
     background-position: center bottom;
-    margin-bottom: 50px;
-
 }
 
 .outlet-group {
@@ -54,7 +48,6 @@
     display: flex;
     flex-direction: column;
     max-width: 1000px;
-    margin-bottom: 40px
 }
 
 .outlet {
@@ -71,7 +64,6 @@
     }
 
     .outlet-women, .outlet-men {
-        min-width: 50%;
-        margin: 10px 0px 10px 0px;
+        min-width: 45%;
     }
 }
