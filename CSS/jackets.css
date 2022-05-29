@@ -2,8 +2,8 @@
 
 .header-jackets h1 {
     text-align: center;
-    margin-top: 50px auto;
-    font-size: 4.5em;
+    margin-top: auto;
+    font-size: 3.5em;
 }
 
 .header-jackets {
@@ -11,75 +11,35 @@
 }
 
 .intro {
-    max-width: 70%;
+    max-width: 500px;
     margin: auto;
     padding-bottom: 30px;
-    font-size: larger;
     text-align: center;
 }
 
-.main-jackets {
-    margin:auto;
-    max-width: 1000px;
+.jackets img {
+    max-width: 250px;
+}
+
+.jackets h4 {
+    margin: 0px;
 }
 
 .jackets {
-    display:grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-items: center;
     max-width: 1000px;
-    column-gap: 100px;
-    margin: 50px;
-}
-
-.jackets img {
-    border-radius: 5%;
-}
-
-.rainydays {
-    margin: 0px;
-    font-size: 1.3em;
-    font-weight: bolder;
-}
-
-.main-jackets h3 {
-    margin: 0px;
-    font-weight: lighter;
-}
-
-.price {
-    font-size: 1.6em;
-    font-weight: 900;
-    margin-bottom: 20px;
-    margin-top: 0px;
-    width: 90%;
-    display:grid;
-    justify-content: right;
+    margin: auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .arrange-jackets {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    padding: 15px;
+    margin: 10px auto;
+    overflow: hidden;
+    transition: transform 0.5s ease;
 }
 
-.arrange-jackets img {
-    max-width: 100%;
-}
-
-/* Media */
-
-@media (min-width: 450px) {
-    
-    .jackets {
-        grid-template-columns: repeat(2,1fr);
-
-    }
-}
-
-@media (min-width: 600px) {
-
-    .jackets {
-        grid-template-columns: repeat(3,1fr);
-
-    }
+.arrange-jackets:hover {
+    transform: scale(1.1);
 }

@@ -1,68 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get quality jackets for rainy days" />
-    <title>Rainy Days | Home</title>
-    <link href="css/style.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index&nav.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
-  </head>
-   <body>
+    <title>Rainydays Home page</title>
+</head>
+<body>
     <header>
-      <div class="header_content">        
-           <a href="index.html"><img src="images/Asset.png"  class="logo" alt="rainydays logo"></a>
-           <form class="search-bar">
-            <input type="search" name="searchbar" id="search" placeholder="Search for products.." class="search-icon" />
-           </form>
-           <div class="nav-icons">
-            <label for="hamburger-menu"><i class="fas fa-bars ikon-spacing"></i></label>
-            <input type="checkbox" id="hamburger-menu" />
-            <nav>
-              <ul>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="outlet.html">Outlet</a></li>
-              </ul>
-            </nav> 
-            <a href="cart.html" class="center"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a>  
-            <a href="signin.html" class="center"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a>
-           </div>
-      </div>
+            <a href="account-creation.html">
+                <h5 class="discount-offer">Create an account and get a 20% discount on your first purchase, limited time offer!</h5>
+            </a>
+        <div class="header-container">
+            <div class="nav-container">
+                <a href="index.html" class="logo"><img src="images/Asset.png" class="logo" alt="rainydays logo"></a>
+                <hr>
+                <div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fas fa-bars ikon-spacing"></i>
+                    </a>
+                </div>
+                    <nav id="nav-list">
+                        <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="men.html">Men</a></li>
+                          <li><a href="women.html">Women</a></li>
+                        </ul>
+                     </nav>
+            </div>
+                 <div class="container-icons">
+                     <ul>
+                         <li><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
+                         <li><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
+                     </ul>
+                 </div>
+        </div>
     </header>
-    <main class="index-main">
-     <section class="new-collection">
-      <div class="home-autumn">
-        <h1 class="shadow">Check out our brand new autumn collection</h1>
-        <a href="autumn.html" class="cta">View Collection</a>
-      </div>       
-     </section>
-     <div class="home-scroll">
-      <section class="home-scroll-1">
-        <div class="canoeing">
-          <h2 class="shadow">jackets for canoeing</h2>
-          <a href="outlet.html" class="cta">View</a>
+    <main>
+        <h1 class="hidden-h1">Rainydays home page</h1>
+        <a href="men.html">
+            <div class="home-img">
+                <h2>Brand new</h2>
+                <h3>autumn collection</h3>
+            </div>
+        </a>
+        <div class="cano">
+            <h2 class="special-h2">Jacket for canoeing?</h2>
+            <p>
+                 Lorem ipsum dolor sit amet,
+                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 Excepteur sint occaecat cupidatat non proident,
+                 sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <a href class="cta-normal">See more</a>
         </div>
-       </section>
-       <section class="home-scroll-2">
-        <div class="bluechick">
-          <h2 class="shadow">news added to outlet</h2>
-          <a href="outlet.html" class="cta">View Outlet</a>
-        </div>
-       </section>
-     </div>
+        <a href="account-creation.html" class="discount-poster">
+            <div>
+                <h3>20% discount on your first purchase!</h3>
+            </div>
+        </a>
     </main>
-     <footer>
-      <div class="about">
-        <h3>About us</h3>
-        <a href="about.html">Our story</a>
-      </div>
-      <div class="customer-service">
-        <h3>Customer service</h3>
-        <a href="contact.html">Contact us</a>
-        <a href="delivery.html">Delivery</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-     </footer>
-  </body>
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact us</a>
+            <a href="delivery.html">Delivery</a>
+            <a href="faq.html">FAQ</a>   
+        </div>
+        <p>Copyright © 2022 Rainydays</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
 </html>
