@@ -34,8 +34,7 @@ h3 {
     color:#072D51;
     padding: 13px;
     margin: 20px;
-    box-shadow: #072D51 5px 5px 0px;
-    border: #ffd48e 2px solid;
+    font-weight: bold;
     font-weight: 600;
     border-radius: 5px;
     overflow: hidden;
@@ -60,13 +59,22 @@ a {
 .back-button {
     border:none;
     cursor: pointer;
-    font-size: 1.1em;
-    text-decoration: underline;
+    font-size: 0.8em;
+    background-color: #F0B351;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    color: #F0B351;
+    background-color: #072D51;
 }
 
 /* Header content - nav, logo and icons*/
 
-.logo {
+.logo img {
     max-width: 150px;
     margin: 10px 20px 10px 20px;
 }
@@ -125,6 +133,10 @@ li a:hover, .discount-offer:hover {
     background-color: #F0B351;
     color:#072D51;
     border-radius: 10px;
+}
+
+.alt-icon {
+    display:none;
 }
 
 
@@ -252,22 +264,28 @@ footer {
 
 @media (max-width: 950px) {
 
-.nav-container {
-    position: relative;
+  .nav-container {
+      position: relative;
+  }
+
+  .nav-container ul {
+      position: absolute;
+      background-color:#072D51;
+      min-width: 100%;
   }
   
   .nav-container #nav-list {
     display: none;
     background-color:#072D51;
     position: relative;
-    top: 90px;
-    left: -20px;
+    top: 70px;
+    left: 0px;
     min-width: 100%;
   }
 
   .nav-container a {
     color: white;
-    padding: 14px 16px;
+    padding: 15px 0px;
     text-decoration: none;
     font-size: 17px;
     display: block; 
@@ -276,13 +294,12 @@ footer {
   .nav-container a.icon {
     display: block;
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 15px;
     font-size: 25px;
   }
 
-
-    hr {
+    header hr {
         display: none;
     }
 
@@ -304,7 +321,7 @@ footer {
     }
 
     .logo {
-        margin: 10px;
+        margin: 0px;
     }
 
     .home-img {
@@ -314,6 +331,14 @@ footer {
     .home-img h3 {
         color:#F0B351;
         text-shadow: black 4px 4px 6px;
+    }
+
+    .alt-icon {
+        display: block;
+    }
+
+    .ikon-spacing {
+        margin-right: 10px
     }
 }
 

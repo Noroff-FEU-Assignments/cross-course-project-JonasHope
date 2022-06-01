@@ -1,4 +1,4 @@
-function myFunction() {
+function hamburgerMenu() {
 	const menu = document.querySelector("#nav-list");
 	
 	if (menu.style.display === "block") {

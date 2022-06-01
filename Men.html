@@ -19,7 +19,7 @@
           <a href="index.html" class="logo"><img src="images/Asset.png" class="logo" alt="rainydays logo"></a>
           <hr>
           <div>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
                   <i class="fas fa-bars ikon-spacing"></i>
               </a>
           </div>
@@ -28,6 +28,8 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="men.html">Men</a></li>
                     <li><a href="women.html">Women</a></li>
+                    <li class="alt-icon"><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
+                    <li class="alt-icon"><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
                   </ul>
                </nav>
       </div>
@@ -42,57 +44,12 @@
     <main class="main-jackets">
       <button class="back-button" onclick="history.back()">Go back</button>
       <div class="header-jackets">
-        <h1 class="special-h2">jackets men</h1>
+        <h1 class="special-h2">Jackets men</h1>
         <p class="intro">Here you will find our jacket selection for men. theres a varerity of colors and sizes on our jackets to fit everyones preferance </p>
       </div>
       <hr>
-      <section class="jackets">
-        <div class="arrange-jackets">
-          <img src="images/ny-green.png" alt="blue multi jacket male">
-          <h4>Multi Jacket</h4>
-          <p class="price">$199</p>
-        </div>
-        <div class="arrange-jackets">
-          <img src="images/ny-blue.png" alt="red AW jacket male">
-          <h4>AW Jacket</h4>
-          <p class="price">$149</p>
-        </div>
-        <div class="arrange-jackets">
-         <img src="images/ny-green.png" alt="green Iconic jacket male">
-          <h4>Iconic Jacket</h4>
-          <p class="price">$299</p>
-        </div>
-        <div class="arrange-jackets">
-          <img src="images/ny-gul.png" alt="blue Iconic jacket male">
-          <h4>Iconic Jacket</h4>
-          <p class="price">$299</p>
-        </div>
-        <div class="arrange-jackets">
-          <img src="images/ny-light.png" alt="green AW jacket male">
-          <h4>AW Jacket</h4>
-          <p class="price">$149</p>
-        </div>
-        <div class="arrange-jackets">
-         <img src="images/ny-pink.png" alt="brown Multi jacket male">
-          <h4>Multi Jacket</h4>
-          <p class="price">$199</p>
-        </div>
-        <div class="arrange-jackets">
-          <img src="images/ny-red.png" alt="red multi jacket male">
-          <h4>Multi Jacket</h4>
-          <p class="price">$199</p>
-        </div>
-        <div class="arrange-jackets">
-          <img src="images/ny-blue.png" alt="blue AW jacket male">
-          <h4>AW Jacket</h4>
-          <p class="price">$149</p>
-        </div>
-        <div class="arrange-jackets">
-         <img src="images/ny-brun.png" alt="red Iconic jacket male">
-          <h4>Iconic Jacket</h4>
-          <p class="price">$299</p>
-        </div>
-      </section>
+      <section class="jackets"></section>
+      <div class="product-details"></div>
     </main>
     <footer>
       <div class="footer-links">
@@ -104,5 +61,6 @@
       <p>Copyright © 2022 Rainydays</p>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/product-list.js" type="module"></script>
   </body>
 </html>
