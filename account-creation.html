@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="create an account with rainy days" />
-    <title>Rainy Days | create an account</title>
+    <meta name="description" content="sign in with rainydays" />
+    <title>Rainy Days | Signin</title>
     <link href="css/index&nav.css" rel="stylesheet" />
     <link href="css/forms.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
    <body class="signin-body">
@@ -19,7 +20,7 @@
           <a href="index.html" class="logo"><img src="images/Asset.png" class="logo" alt="rainydays logo"></a>
           <hr>
           <div>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
                   <i class="fas fa-bars ikon-spacing"></i>
               </a>
           </div>
@@ -41,25 +42,28 @@
            </div>
   </div>
     </header>
-    <main class="signin-main">
+    <main >
       <button class="back-button" onclick="history.back()">Go back</button>
-        <form method="post" class="signin-form">
-            <div class="header">
-                <h1>Create account</h1>
-            </div>
-            <div class="signin-section">
-                <label for="email">Username</label>
-                <input type="text" placeholder="Email" id="email" name="email" required>
-                <label for="password">Password</label>
-                <input type="password" placeholder="Password" id="password" required>
-                <label for="password2">Password</label>
-                <input type="password" placeholder="Password" id="password2" required>
-                <a href="signin.html">Already have an account?</a>
-            <div class="form-button">
-                <button class="cta-normal">Create account</button>
-            </div>
-            </div>
-        </form>
+      <h1 class="special-h2 center">Create an account</h1>
+        <div class="main-class">
+            <div id="skjema"></div>
+            <form>
+                <div>
+                    <label>Email</label>
+                    <input name="email" id="email" />
+                    <div id="emailError" class="error">Enter a valid email</div>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input name="password" id="password" />
+                    <div id="passwordError" class="error">Password must be a minimum of 10 characters</div>
+                </div>
+                <div><a href="signin.html">Already have an account?</a></div>
+                <div>
+                    <button class="submit-b form-cta">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
     <footer>
       <div class="footer-links">
@@ -71,5 +75,6 @@
       <p>Copyright © 2022 Rainydays</p>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/accounts.js"></script>
   </body>
 </html>

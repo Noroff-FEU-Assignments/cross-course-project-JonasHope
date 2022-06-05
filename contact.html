@@ -3,60 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact rainydays, email or phone" />
-    <title>Rainy Days | Contact</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <meta name="description" content="Get quality jackets for rainy days, jackets for men" />
+    <title>Rainy Days | products men</title>
+    <link href="css/index&nav.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
    <body>
     <header>
-      <div class="header_content">        
-           <a href="index.html"><img src="images/Asset.png"  class="logo" alt="Rainydays logo"></a>
-           <form class="search-bar">
-            <input type="search" name="searchbar" id="search" placeholder="Search for products.." class="search-icon" />
-           </form>
-           <div class="nav-icons">
-            <label for="hamburger-menu"><i class="fas fa-bars ikon-spacing"></i></label>
-            <input type="checkbox" id="hamburger-menu" />
-            <nav>
-              <ul>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="outlet.html">Outlet</a></li>
-                <li class="alt-icon"><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
-                <li class="alt-icon"><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
-              </ul>
-            </nav> 
-            <a href="cart.html" class="center"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a>  
-            <a href="signin.html"class="center"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a>
+      <a href="account-creation.html">
+          <h5 class="discount-offer">Create an account and get a 20% discount on your first purchase, limited time offer!</h5>
+      </a>
+  <div class="header-container">
+      <div class="nav-container">
+          <a href="index.html" class="logo"><img src="images/Asset.png" class="logo" alt="rainydays logo"></a>
+          <hr>
+          <div>
+              <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                  <i class="fas fa-bars ikon-spacing"></i>
+              </a>
+          </div>
+              <nav id="nav-list">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li class="alt-icon"><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
+                    <li class="alt-icon"><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
+                  </ul>
+               </nav>
+      </div>
+           <div class="container-icons">
+               <ul>
+                   <li><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
+                   <li><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
+               </ul>
            </div>
-      </div>
+  </div>
     </header>
-    <main class="contact-main">
-      <button onclick="history.back()">Go back</button>
-        <h1>Contact us</h1>
-        <p>
-            We recommend you to contact us on email, there we can be reached all day every week.
-            Emails sent after 4 PM in weeks days usually gets answered the during the next day.
-            Emails sent during weekend will be answered the following monday.    
-        </p>
-        <p class="contact-email">Email: Support@Rainydays.com</p>
-        <p class="contact-phone">Phone: +47 11 222 333</p>
-        <p class="contact-hours">(Phone hours 9am-2pm)</p>
-        <a href="index.html" class="cta">Home</a>
+    <main>
+      <button class="back-button" onclick="history.back()">Go back</button>
+      <h1 class="special-h2"></h1>
+        <div class="main-class">
+            <div id="skjema"></div>
+            <form>
+                <div>
+                    <label>Name (required)</label>
+                    <input name="fullName" id="fullName" />
+                    <div id="nameError" class="error">Please enter your full name</div>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input name="email" id="email" />
+                    <div id="emailError" class="error">Enter a valid email</div>
+                </div>
+                <div>
+                    <label>Address (min length 25)</label>
+                    <input name="address" id="address" />
+                    <div id="addressError" class="error">Minimum length of 5</div>
+                </div>
+                <div>
+                    <label>Subject (min length 10)</label>
+                    <input name="subject" id="subject" />
+                    <div id="subjectError" class="error">Minimum length of 10</div>
+                </div>
+                <div class="text-area">
+                  <label>Your message</label>
+                  <textarea type="textarea" name="textarea" id="textarea" rows="10" cols="50"></textarea>
+                  <div id="textError" class="error">Minimum length of 25</div>
+                </div>
+                <button class="submit-b">Submit</button>
+            </form>
+        </div>
     </main>
-  <footer>
-      <div class="about">
-        <h3>About us</h3>
-        <a href="about.html">Our story</a>
+    <footer>
+      <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact us</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="faq.html">FAQ</a>   
       </div>
-      <div class="customer-service">
-        <h3>Customer service</h3>
-        <a href="contact.html" class="active">Contact us</a>
-        <a href="delivery.html">Delivery</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-    </footer>
+      <p>Copyright © 2022 Rainydays</p>
+  </footer>
+  <script src="js/contact.js"></script>
   </body>
 </html>

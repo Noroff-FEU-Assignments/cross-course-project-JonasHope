@@ -2,7 +2,11 @@
 
 body {
     font-family: Helvetica, sans-serif, Arial;
-    height: 1vh;
+    height:1vh;
+}
+
+main {
+    min-height: 100vh;
 }
 
 @font-face {
@@ -60,7 +64,6 @@ a {
     border:none;
     cursor: pointer;
     font-size: 0.8em;
-    background-color: #F0B351;
     padding: 10px;
     margin: 10px 0px;
     border-radius: 10px;
@@ -159,7 +162,7 @@ li a:hover, .discount-offer:hover {
 }
 
 .home-img {
-    background-image:  url('../images/new-main.jpg');
+    background-image: url('../images/new-main.jpg');
     display: flex;
     flex-direction: row;
     background-repeat: no-repeat;
@@ -240,7 +243,7 @@ li a:hover, .discount-offer:hover {
 
 footer {
     background-color: #072D51;
-    color: white;
+    color: #fff;
 }
 
 .footer-links, footer p {
@@ -281,6 +284,7 @@ footer {
     top: 70px;
     left: 0px;
     min-width: 100%;
+    z-index: 999;
   }
 
   .nav-container a {
@@ -326,11 +330,9 @@ footer {
 
     .home-img {
         flex-direction: column;
-    }
-
-    .home-img h3 {
-        color:#F0B351;
-        text-shadow: black 4px 4px 6px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0px 100px;
     }
 
     .alt-icon {
@@ -339,6 +341,12 @@ footer {
 
     .ikon-spacing {
         margin-right: 10px
+    }
+}
+
+@media (max-width: 450px) {
+    .home-img {
+        padding:0px 20px;
     }
 }
 

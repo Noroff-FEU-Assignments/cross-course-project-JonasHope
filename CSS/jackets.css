@@ -13,7 +13,7 @@
 .intro {
     max-width: 500px;
     margin: auto;
-    padding-bottom: 30px;
+    padding: 0px 15px 15px 30px;
     text-align: center;
 }
 
@@ -38,62 +38,191 @@
     margin: 10px auto;
     overflow: hidden;
     transition: transform 0.5s ease;
-    background-color: #efefef
+    background-color: #efefef;
+    cursor: pointer;
 }
 
 .arrange-jackets:hover {
     transform: scale(1.1);
 }
 
-/*.product-details {
-    border: 1px black solid;
-    background-color: #efefef;
-    height: 400px;
-    left: 30%;
-    right: 30%;
-    top: 50%;
-    margin-top: -200px;
-    position: fixed;
-    padding: 20px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    display: none;
-}*/
-
+/* Modal */
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    position: fixed; 
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
+    background-color: #efefef;
+    margin: 10% auto auto auto;
+    padding: 25px;
+    width: 50%;
+    text-align: center;
+    border: 1px #072D51 solid;
+    }
 
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+.modal-content h4 {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.jck-img {
+    max-width:100%;
+    max-height: 40vh;
+}
+
+.price {
+    font-size: large;
+    padding-bottom: 15px;
     font-weight: bold;
-  }
+}
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.close, .remove-item {
+    color: rgb(155, 148, 148);
+    float: right;
+    font-size: 30px;
+    font-weight: bolder;
+    }
+
+.close:hover, .close:focus, .remove-item:hover, .remove-item:focus{
+    color: black;
+    cursor: pointer;
+}
+
+/* Cart */
+
+.cart {
+    padding: 20px;
+    margin: 8px;
+    height: 90%;
+    max-width: 50%;
+    position: fixed;
+    right:0px;
+    top: 0%;
+    display:none;
+    background-color:#072D51;
+    color: #fff;
+}
+
+.cart-list {
+    max-height:70%;
+    overflow-y:scroll;
+    margin:5px;
+}
+
+.cart-item{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.cart-item h4, .cart-item p {
+    font-weight: 100;
+}
+
+.cart-item hr {
+    width: 100%
+}
+
+.cart-button {
+    min-width: 100%;
+    border: none;
+    background-color: rgb(0, 64, 255);
+    color:white;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.cart-button:hover {
+    background-color: rgb(30, 86, 252);
+    transform: scale(0.95);
+}
+
+.cart-img {
+    max-width: 90%;
+    margin: 10px
+}
+
+.check-out {
+    color: white;
+    background-color: green;
+    padding: 20px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+}
+
+.total {
+    padding: 20px;
+    font-size: larger;
+}
+
+.close-cart {
+    border: none;
+    background-color: #484C6F;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Cart page */
+
+.sho-cart {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 600px;
+    margin: auto;
+    background-color: #efefef;
+}
+
+.cart-page {
+     max-width: 100px;
+}
+
+.sho-total {
+    font-size: large;
+    font-weight: bold;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.purchase-btn {
+    padding: 20px;
+    background-color: green;
+    margin: 10px auto 50px auto;
+    color:#fff;
+    text-align: center;
+}
+
+/* Media */
+
+@media (min-width:950px) {
+
+    .modal-content {
+        width:30%;
+    }
+
+    .cart {
+        max-width: 20%;
+    }
+
+    .cart-list {
+        max-height: 75%;
+    }
+
 }

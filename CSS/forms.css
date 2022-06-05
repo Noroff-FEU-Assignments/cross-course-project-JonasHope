@@ -1,41 +1,35 @@
-.signin-section {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
+.form-button {
     margin: auto;
-    padding: 15px;
+    padding: 20px 0px;
 }
 
-.header {
+.form-cta {
+    padding: 20px;
+    min-width: 200px;
+    border: none;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.form-cta:hover {
+    background-color: #efefef;
+    color: #072D51;
+    border: 1px solid #072D51;
+}
+
+.center {
     text-align: center;
 }
 
-.signin-section label {
-    font-size: 1.1em;
-    margin-top: 10px;
+.main-class a {
+    color:white;
 }
 
-.signin-section input {
-    padding: 10px;
-    margin: 10px 0px;
-    border-radius: 10px;
-    border: 1px #072D51 solid
+.main-class form {
+    margin-bottom: 20px;
 }
 
-.signin-section input:hover {
-    background-color: #F0B351;
-}
-
-.signin-section a {
-    color: black;
-    padding: 5px;
-}
-
-.signin-section a:hover {
-    text-decoration: underline;
-}
-
-.form-button {
-    margin: auto;
-    padding: 10px;
+.paypay {
+    display:none;
 }

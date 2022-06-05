@@ -3,74 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get quality jackets for rainy days, shopping cart" />
-    <title>Rainy Days | shopping cart</title>
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/cart.css" rel="stylesheet" />
+    <meta name="description" content="Rainy days shopping cart, checkout" />
+    <title>Rainy Days | Shopping cart</title>
+    <link href="css/index&nav.css" rel="stylesheet" />
+    <link href="css/jackets.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
    <body>
     <header>
-      <div class="header_content">        
-           <a href="index.html"><img src="images/Asset.png"  class="logo" alt="Rainydays logo"></a>
-           <form class="search-bar">
-            <input type="search" name="searchbar" id="search" placeholder="Search for products.." class="search-icon" />
-           </form>
-           <div class="nav-icons">
-            <label for="hamburger-menu"><i class="fas fa-bars ikon-spacing"></i></label>
-            <input type="checkbox" id="hamburger-menu" />
-            <nav>
-              <ul>
-                <li><a href="men.html">Men</a></li>
-                <li><a href="women.html">Women</a></li>
-                <li><a href="outlet.html">Outlet</a></li>
-                <li class="alt-icon"><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
-                <li class="alt-icon"><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
-              </ul>
-            </nav> 
-            <a href="cart.html" class="center"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a>  
-            <a href="signin.html"class="center"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a>
-           </div>
+      <a href="account-creation.html">
+          <h5 class="discount-offer">Create an account and get a 20% discount on your first purchase, limited time offer!</h5>
+      </a>
+  <div class="header-container">
+      <div class="nav-container">
+          <a href="index.html" class="logo"><img src="images/Asset.png" class="logo" alt="rainydays logo"></a>
+          <hr>
+          <div>
+              <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
+                  <i class="fas fa-bars ikon-spacing"></i>
+              </a>
+          </div>
+              <nav id="nav-list">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="men.html">Men</a></li>
+                    <li><a href="women.html">Women</a></li>
+                    <li class="alt-icon"><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
+                    <li class="alt-icon"><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
+                  </ul>
+               </nav>
       </div>
+           <div class="container-icons">
+               <ul>
+                   <li><a href="cart.html"><i class="fas fa-shopping-bag ikon-spacing"></i><span>Cart</span></a></li>
+                   <li><a href="signin.html"><i class="far fa-user-circle ikon-spacing"></i><span>Sign in</span></a></li>
+               </ul>
+           </div>
+  </div>
     </header>
     <main class="cart-main">
-      <button onclick="history.back()">Go back</button>
-      <h1>Cart</h1>
+      <button class="back-button" onclick="history.back()">Go back</button>
+      <div class="sho-cart"></div>
       <hr>
-      <section class="cart-product">
-        <div class="cart-image">
-         <div class="cancel-icon">
-          <a href="index.html"><i class="far fa-times-circle back"></i></a>
-         </div>
-          <img src="images/bla5.jpg" alt="blue jacket male">
-        </div>
-        <div class="product-specifics">
-          <h3>Rainydays Iconic Jacket</h3>
-          <p>$299</p>
-        </div>
-      </section>
-      <hr>
-      <section class="cart-total">
-        <div class="total">
-          <h2>Total</h2>
-          <p>$299</p>
-        </div>
-        <div class="cart-cta">
-          <a href="payment.html" class="cta-blue">Buy</a>
-        </div>
-      </section>
+      <div class="sho-total">
+      </div>
+      <a href="payment.html" class="purchase-btn sho-total">Purchase</a>
     </main>
-  <footer>
-      <div class="about">
-        <h3>About us</h3>
-        <a href="about.html">Our story</a>
+    <footer>
+      <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact us</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="faq.html">FAQ</a>   
       </div>
-      <div class="customer-service">
-        <h3>Customer service</h3>
-        <a href="contact.html">Contact us</a>
-        <a href="delivery.html">Delivery</a>
-        <a href="faq.html">FAQ</a>
-      </div>
-    </footer>
+      <p>Copyright © 2022 Rainydays</p>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/cart.js" type="module"></script>
   </body>
 </html>
