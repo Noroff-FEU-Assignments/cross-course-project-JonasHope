@@ -62,7 +62,7 @@ function formCheck(event) {
     };
 };
 
-form.addEventListener("confirm Purchase", formCheck);
+form.addEventListener("submit", formCheck);
 
 function check(value, length) {
     if (value.trim().length > length) {
