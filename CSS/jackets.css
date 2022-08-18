@@ -209,6 +209,14 @@
     text-align: center;
 }
 
+/* detailed page */
+
+.jck-detail {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Media */
 
 @media (min-width:950px) {
