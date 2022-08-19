@@ -1,8 +1,6 @@
-const url = "http://localhost/rD-products/wp-json/wc/store/products";
+const url = "https://rainydays-products.great-site.net/wp-json/wc/store/products";
 const productContainer = document.querySelector(".jackets");
-const details = document.querySelector(".product-details")
-const cart = document.querySelector(".cart")
-const cartList = document.querySelector(".cart-list")
+
 
 async function getProducts(){
     try{
@@ -12,7 +10,7 @@ async function getProducts(){
     }
 
     catch(error){
-        console.log(error);
+        console.log(error, "error");
     }
 }
 

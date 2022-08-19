@@ -8,7 +8,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "http://localhost/rD-products/wp-json/wc/store/products/" + id;
+const url = "https://rainydays-products.great-site.net/wp-json/wc/store/products/" + id;
 
 async function getJackets() {
 
@@ -32,9 +32,9 @@ function createHTML(details) {
                                      <h3>${details.price_html}</h3>
                                      <img src="${details.images[0].src}" alt="${details.name}">
                                      <p>${details.description}</p>
-                                     <button id="btn" class="cart-button">Add to cart</button>
+                                     <button id="btn" class="cart-button" data-details="${details.id}">Add to cart</button>
                                  </div>`;
-}
+};
 
 let cartArray = [];
 
