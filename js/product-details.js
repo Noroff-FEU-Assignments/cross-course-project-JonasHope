@@ -8,7 +8,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const url = "https://rainydays-products.great-site.net/wp-json/wc/store/products/" + id;
+const url = "https://rd-products.site/wp-json/wc/store/products/" + id;
 
 async function getJackets() {
 
@@ -36,12 +36,13 @@ function createHTML(details) {
                                  </div>`;
 };
 
+
 let cartArray = [];
 
 const addToCartButtons = document.querySelectorAll("button");
 addToCartButtons.forEach(function(addToCartButton){
   addToCartButton.onclick = function(event){
-    const itemToAdd = products.find(item => item.id === event.target.dataset.detailed)
+    const itemToAdd = products.find(item => item.id === event.target.dataset.details)
     cartArray.push(itemToAdd);
     showCart(cartArray);
     localStorage.setItem("cartList", JSON.stringify(cartArray));

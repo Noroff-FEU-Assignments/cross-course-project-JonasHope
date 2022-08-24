@@ -1,4 +1,4 @@
-//import { products } from "./product-array/products.js";
+import { products } from "./product-array/products.js";
 
 // Product list and modal
 
@@ -8,16 +8,16 @@ const cart = document.querySelector(".cart")
 const cartList = document.querySelector(".cart-list")
 
 
-//products.forEach(product => {
- //   productsContainer.innerHTML +=
- //   `
-  //  <div id="arrange-jackets-${product.id}" class="arrange-jackets">
-  //     <img src="${product.image}" alt="${product.name}">
- //      <h4>${product.name}</h4>
- //      <p class="price">£${product.price}</p>
- //   </div>
- //   `
-//});
+products.forEach(product => {
+    productsContainer.innerHTML +=
+    `
+    <div id="arrange-jackets-${product.id}" class="arrange-jackets">
+       <img src="${product.image}" alt="${product.name}">
+       <h4>${product.name}</h4>
+       <p class="price">£${product.price}</p>
+    </div>
+    `
+});
 
 products.forEach(detailed => {
     details.innerHTML +=

@@ -1,4 +1,4 @@
-const url = "https://rainydays-products.great-site.net/wp-json/wc/store/products";
+const url = "https://rd-products.site/wp-json/wc/store/products";
 const productContainer = document.querySelector(".jackets");
 
 
