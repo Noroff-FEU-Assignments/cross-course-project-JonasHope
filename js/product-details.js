@@ -42,7 +42,7 @@ let cartArray = [];
 const addToCartButtons = document.querySelectorAll("button");
 addToCartButtons.forEach(function(addToCartButton){
   addToCartButton.onclick = function(event){
-    const itemToAdd = details.find(item => item.id === event.target.dataset.details)
+    const itemToAdd = details
     cartArray.push(itemToAdd);
     showCart(cartArray);
     localStorage.setItem("cartList", JSON.stringify(cartArray));
@@ -56,18 +56,18 @@ function showCart(cartItems){
   cartList.innerHTML = "";
   let total = 0;
   cartItems.forEach(function(cartElement){
-    total += parseFloat(cartElement.price);
+    total += parseFloat(cartElement.price_html);
     cartList.innerHTML +=
     `
     <div class="cart-item">
-         <img src="${cartElement.image}" class="cart-img" alt="${cartElement.name}">
+         <img src="${cartElement.images[0].src}" class="cart-img" alt="${cartElement.name}">
          <h4>${cartElement.name}</h4>
-         <p class="price">£${cartElement.price}</p>
+         <p class="price">${cartElement.price_html}</p>
          <hr>
     </div>
     `
   })
-  totalContainer.innerHTML = `Total: £ ${total}`
+  totalContainer.innerHTML = `Total:  ${total}`
 }
 
 
