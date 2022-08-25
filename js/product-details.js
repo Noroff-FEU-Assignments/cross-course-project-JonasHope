@@ -34,7 +34,7 @@ function createHTML(details) {
                                      <p>${details.description}</p>
                                      <button id="btn" class="cart-button" data-details="${details.id}">Add to cart</button>
                                  </div>`;
-};
+
 
 
 let cartArray = [];
@@ -42,7 +42,7 @@ let cartArray = [];
 const addToCartButtons = document.querySelectorAll("button");
 addToCartButtons.forEach(function(addToCartButton){
   addToCartButton.onclick = function(event){
-    const itemToAdd = products.find(item => item.id === event.target.dataset.details)
+    const itemToAdd = details.find(item => item.id === event.target.dataset.details)
     cartArray.push(itemToAdd);
     showCart(cartArray);
     localStorage.setItem("cartList", JSON.stringify(cartArray));
@@ -70,6 +70,7 @@ function showCart(cartItems){
   totalContainer.innerHTML = `Total: £ ${total}`
 }
 
+
 const closeCart = document.querySelectorAll(".close-cart")
 
 for (const close of closeCart) {
@@ -77,3 +78,4 @@ for (const close of closeCart) {
     cart.style.display = 'none'
     }
 }
+};
