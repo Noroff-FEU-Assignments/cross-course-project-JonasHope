@@ -56,7 +56,7 @@ function showCart(cartItems){
   cartList.innerHTML = "";
   let total = 0;
   cartItems.forEach(function(cartElement){
-    total += parseFloat(cartElement.price_html);
+    total += parseFloat(cartElement.prices.price / 100);
     cartList.innerHTML +=
     `
     <div class="cart-item">
@@ -67,7 +67,7 @@ function showCart(cartItems){
     </div>
     `
   })
-  totalContainer.innerHTML = `Total:  ${total}`
+  totalContainer.innerHTML = `Total: $ ${total}`
 }
 
 
