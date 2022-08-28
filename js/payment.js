@@ -1,4 +1,5 @@
 const overskrift = document.querySelector(`.paypay`);
+const submit = document.querySelector(`.submit-b`);
 const form = document.querySelector(`form`);
 const fullName = document.querySelector(`#fullName`);
 const nameError = document.querySelector(`#nameError`);

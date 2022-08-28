@@ -4,13 +4,13 @@ const totalContainer = document.querySelector(".sho-total");
 
 let total = 0;
 cartItems.forEach(function(cartElement){
-    total += parseFloat(cartElement.price);
+    total += parseFloat(cartElement.prices.price / 100);
     cartContainer.innerHTML +=
         `
     <div class="cart-item cart-page">
-         <img src="${cartElement.image}" class="cart-img" alt="${cartElement.name}">
+         <img src="${cartElement.images[0].src}" class="cart-img" alt="${cartElement.name}">
          <h4>${cartElement.name}</h4>
-         <p class="price">£${cartElement.price}</p>
+         <p class="price">${cartElement.price_html}</p>
     </div>
     `
 })
