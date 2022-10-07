@@ -33,4 +33,4 @@ I recommend visual studio code
 
 ## Acknowledgments
 
-The teachers at Noroff online studies. allthough this is an exam project, and the teachers didnt help directly with this project, they helped med a lot prior to the exam, and i wouldnt be able to pull this off  without them.
+The teachers at Noroff online studies. This site as mentioned earlier was a project I worked on over the whole first year of my study, teachers obviously helped a lot with several elements of the site, in order for me to learn.
